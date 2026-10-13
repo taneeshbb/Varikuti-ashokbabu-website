@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>శ్రీ వరికూటి అశోక్ బాబు గారు | అధికారిక ప్రజా వెబ్‌సైట్ - వేమూరు నియోజకవర్గం</title>
+  <!-- Google Fonts: Inter and authentic Telugu typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Telugu:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-blue: #0876C9;
+      --deep-navy: #073B70;
+      --party-green: #138A4B;
+      --pure-white: #FFFFFF;
+      --light-bg: #F4F8FC;
+      --dark-text: #172536;
+      --muted-grey: #64748B;
+      --border-color: #E2E8F0;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 10px -1px rgba(7, 59, 112, 0.08);
+      --shadow-lg: 0 12px 24px -4px rgba(7, 59, 112, 0.14);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+      --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', 'Noto Sans Telugu', system-ui, -apple-system, sans-serif;
+      background-color: var(--light-bg);
+      color: var(--dark-text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Party tricolor top accent ribbon */
+    .party-tricolor-ribbon {
+      height: 5px;
+      width: 100%;
+      background: linear-gradient(90deg, 
+        var(--party-green) 0%, 
+        var(--party-green) 33.3%, 
+        var(--pure-white) 33.3%, 
+        var(--pure-white) 66.6%, 
+        var(--primary-blue) 66.6%, 
+        var(--primary-blue) 100%);
+    }
+
+    /* Top info banner */
+    .top-info-bar {
+      background-color: var(--deep-navy);
+      color: #E2E8F0;
+      font-size: 0.82rem;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .top-info-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .constituency-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.12);
+      padding: 3px 12px;
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #FFFFFF;
+    }
+
+    header.main-header {
+      background-color: var(--pure-white);
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 0;
+      z-index: 900;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+      min-height: 74px;
+    }
+
+    .brand-identity {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      cursor: pointer;
+    }
+
+    .party-symbol-emblem {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--party-green) 0%, var(--primary-blue) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(8, 118, 201, 0.25);
+      border: 2px solid #FFFFFF;
+      flex-shrink: 0;
+    }
+
+    .leader-title-telugu {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--deep-navy);
+      line-height: 1.25;
+    }
+
+    .leader-subtitle {
+      font-size: 0.78rem;
+      color: var(--muted-grey);
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .leader-subtitle .dot {
+      color: var(--party-green);
+      font-weight: bold;
+    }
+
+    .nav-links-desktop {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      list-style: none;
+    }
+
+    .nav-link {
+      padding: 8px 14px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: #334155;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--primary-blue);
+      background-color: #EFF6FF;
+      font-weight: 600;
+    }
+
+    .header-cta-btn {
+      margin-left: 8px;
+      background: linear-gradient(135deg, var(--primary-blue) 0%, var(--deep-navy) 100%);
+      color: var(--pure-white) !important;
+      font-weight: 600;
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 4px 10px rgba(8, 118, 201, 0.25);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .mobile-menu-toggle {
+      display: none;
+      background: transparent;
+      border: none;
+      color: var(--deep-navy);
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    .mobile-drawer {
+      display: none;
+      background: var(--pure-white);
+      border-top: 1px solid var(--border-color);
+      padding: 16px 20px 24px;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .mobile-nav-list .nav-link {
+      width: 100%;
+      padding: 12px 14px;
+      font-size: 1rem;
+      border-bottom: 1px solid #F1F5F9;
+    }
+
+    /* Page View Transitions */
+    main#app-root {
+      flex: 1;
+    }
+
+    .page-view {
+      display: none;
+      animation: fadeIn 0.3s ease-in-out forwards;
+    }
+
+    .page-view.active-view {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-section {
+      background: linear-gradient(135deg, #F0F7FD 0%, #FFFFFF 50%, #F3FAF6 100%);
+      padding: 16px 0 40px;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 1px solid #E2E8F0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .party-affiliation-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 14px;
+      background-color: #E0F2FE;
+      color: var(--deep-navy);
+      border-radius: var(--radius-full);
+      font-size: 0.84rem;
+      font-weight: 600;
+      margin-bottom: 18px;
+      border-left: 3px solid var(--primary-blue);
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+      line-height: 1.25;
+      font-weight: 800;
+      color: var(--deep-navy);
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-title span.highlight {
+      color: var(--primary-blue);
+    }
+
+    .hero-lead-text {
+      font-size: 1.08rem;
+      color: #334155;
+      line-height: 1.7;
+      margin-bottom: 28px;
+      max-width: 580px;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: var(--transition);
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background-color: var(--primary-blue);
+      color: var(--pure-white);
+      box-shadow: 0 4px 12px rgba(8, 118, 201, 0.28);
+    }
+
+    .btn-primary:hover {
+      background-color: #0662A6;
+      box-shadow: 0 6px 16px rgba(8, 118, 201, 0.38);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background-color: var(--pure-white);
+      border-color: #CBD5E1;
+      color: var(--deep-navy);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--primary-blue);
+      color: var(--primary-blue);
+      background-color: #F8FAFC;
+      transform: translateY(-2px);
+    }
+
+    .hero-badges-row {
+      display: flex;
+      gap: 20px;
+      padding-top: 18px;
+      border-top: 1px solid #E2E8F0;
+    }
+
+    .hero-stat-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .stat-number {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--deep-navy);
+    }
+
+    .stat-label {
+      font-size: 0.78rem;
+      color: var(--muted-grey);
+    }
+
+    /* Leader Portrait Card */
+    .hero-image-wrap {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-card-frame {
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+      border-radius: var(--radius-lg);
+      background: var(--pure-white);
+      padding: 12px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid #E2E8F0;
+    }
+
+    .hero-card-frame::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: -6px;
+      right: -6px;
+      bottom: -6px;
+      border-radius: calc(var(--radius-lg) + 6px);
+      background: linear-gradient(135deg, var(--party-green), var(--primary-blue));
+      z-index: -1;
+      opacity: 0.6;
+    }
+
+    .portrait-image-container {
+      width: 100%;
+      height: 460px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background-color: #F8FAFC;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .portrait-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 10%;
+      transition: transform 0.5s ease;
+    }
+
+    .hero-card-frame:hover .portrait-img {
+      transform: scale(1.03);
+    }
+
+    .portrait-caption-box {
+      padding: 14px 10px 6px;
+      text-align: center;
+    }
+
+    .leader-caption-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--deep-navy);
+    }
+
+    .leader-caption-role {
+      font-size: 0.82rem;
+      color: var(--muted-grey);
+      font-weight: 500;
+    }
+
+    /* Common Section Styles */
+    .section-py {
+      padding: 70px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 45px;
+      position: relative;
+    }
+
+    .section-eyebrow {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--party-green);
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: inline-block;
+    }
+
+    .section-heading-telugu {
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: var(--deep-navy);
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle-desc {
+      font-size: 1rem;
+      color: var(--muted-grey);
+      max-width: 660px;
+      margin: 0 auto;
+    }
+
+    .about-preview-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      align-items: center;
+      gap: 48px;
+      background: var(--pure-white);
+      padding: 44px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+    }
+
+    .about-preview-img-box {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      aspect-ratio: 4/5;
+      background-color: #F8FAFC;
+    }
+
+    .about-preview-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 15%;
+    }
+
+    .about-preview-text h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--deep-navy);
+      margin-bottom: 18px;
+      line-height: 1.35;
+    }
+
+    .about-preview-text p {
+      color: #334155;
+      font-size: 0.98rem;
+      margin-bottom: 16px;
+      line-height: 1.75;
+    }
+
+    .pillar-points {
+      margin: 24px 0 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .pillar-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--deep-navy);
+    }
+
+    .pillar-icon-dot {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #DCFCE7;
+      color: var(--party-green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      flex-shrink: 0;
+    }
+
+    /* Tribute section */
+    .tribute-section {
+      background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+      border-top: 1px solid #E2E8F0;
+      border-bottom: 1px solid #E2E8F0;
+    }
+
+    .tribute-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 1020px;
+      margin: 0 auto;
+    }
+
+    .tribute-card {
+      background: var(--pure-white);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid #E2E8F0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tribute-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--party-green), var(--primary-blue));
+    }
+
+    .tribute-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .tribute-avatar-wrap {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 20px;
+      border: 5px solid #FFFFFF;
+      box-shadow: 0 8px 22px rgba(7, 59, 112, 0.16);
+      background-color: #F1F5F9;
+      position: relative;
+    }
+
+    .tribute-avatar-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.4s ease;
+    }
+
+    .tribute-card:hover .tribute-avatar-wrap img {
+      transform: scale(1.06);
+    }
+
+    .tribute-leader-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--deep-navy);
+      margin-bottom: 4px;
+    }
+
+    .tribute-leader-tag {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--primary-blue);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+
+    .tribute-leader-desc {
+      font-size: 0.92rem;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    .activities-grid, .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 26px;
+    }
+
+    .activity-card, .news-card {
+      background: var(--pure-white);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-color);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .activity-card:hover, .news-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .activity-img-wrap, .news-thumb-wrap {
+      height: 220px;
+      overflow: hidden;
+      position: relative;
+      background-color: #F8FAFC;
+    }
+
+    .activity-img-wrap img, .news-thumb-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      transition: transform 0.4s ease;
+    }
+
+    .activity-card:hover .activity-img-wrap img,
+    .news-card:hover .news-thumb-wrap img {
+      transform: scale(1.05);
+    }
+
+    .activity-category-tag {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(7, 59, 112, 0.92);
+      color: #FFFFFF;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      backdrop-filter: blur(4px);
+    }
+
+    .activity-body, .news-content {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .activity-date, .news-date {
+      font-size: 0.8rem;
+      color: var(--party-green);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .activity-title, .news-headline {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--deep-navy);
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+
+    .activity-desc, .news-summary {
+      font-size: 0.88rem;
+      color: #475569;
+      line-height: 1.6;
+      margin-bottom: 18px;
+      flex: 1;
+    }
+
+    /* Gallery styles */
+    .gallery-filter-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 34px;
+    }
+
+    .filter-btn {
+      padding: 8px 18px;
+      border-radius: var(--radius-full);
+      font-size: 0.88rem;
+      font-weight: 600;
+      background: var(--pure-white);
+      border: 1px solid #CBD5E1;
+      color: #334155;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--primary-blue);
+      border-color: var(--primary-blue);
+      color: var(--pure-white);
+      box-shadow: 0 2px 8px rgba(8, 118, 201, 0.25);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: #F8FAFC;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 40%, rgba(7, 59, 112, 0.95) 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 16px;
+      color: #FFFFFF;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-caption {
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .gallery-subcaption {
+      font-size: 0.76rem;
+      color: #93C5FD;
+      margin-top: 2px;
+    }
+
+    .contact-layout-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 36px;
+      background: var(--pure-white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-color);
+    }
+
+    .contact-info-panel {
+      background: linear-gradient(135deg, var(--deep-navy) 0%, #064E8A 100%);
+      color: #FFFFFF;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .contact-form-panel {
+      padding: 40px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--deep-navy);
+      margin-bottom: 6px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1px solid #CBD5E1;
+      border-radius: var(--radius-sm);
+      font-size: 0.92rem;
+      color: var(--dark-text);
+      background-color: #FFFFFF;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary-blue);
+      box-shadow: 0 0 0 3px rgba(8, 118, 201, 0.15);
+    }
+
+    .form-alert-box {
+      display: none;
+      padding: 14px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+    }
+
+    .form-alert-box.success {
+      display: block;
+      background-color: #DCFCE7;
+      border: 1px solid #86EFAC;
+      color: #166534;
+    }
+
+    .about-bio-grid {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 36px;
+      align-items: flex-start;
+      margin-bottom: 50px;
+    }
+
+    .leader-sticky-card {
+      background: var(--pure-white);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      position: sticky;
+      top: 100px;
+    }
+
+    .bio-content-card {
+      background: var(--pure-white);
+      padding: 36px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .bio-paragraph {
+      margin-bottom: 20px;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #334155;
+    }
+
+    /* Footer styling */
+    footer.main-footer {
+      background-color: var(--deep-navy);
+      color: #E2E8F0;
+      padding-top: 60px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      margin-top: auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+
+    .footer-bottom-bar {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 22px 0;
+      font-size: 0.82rem;
+      color: #94A3B8;
+    }
+
+    .footer-bottom-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* Lightbox modal */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(7, 23, 44, 0.95);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      backdrop-filter: blur(8px);
+    }
+
+    .lightbox-modal.open {
+      display: flex;
+    }
+
+    .lightbox-container {
+      position: relative;
+      max-width: 900px;
+      width: 100%;
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .lightbox-image-wrap {
+      max-height: 72vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: #000;
+    }
+
+    .lightbox-image-wrap img {
+      max-width: 100%;
+      max-height: 72vh;
+      object-fit: contain;
+    }
+
+    .lightbox-caption-box {
+      margin-top: 14px;
+      color: #F8FAFC;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .lightbox-close-btn {
+      position: absolute;
+      top: -46px;
+      right: 0;
+      background: transparent;
+      border: none;
+      color: #FFFFFF;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    .lightbox-nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #FFFFFF;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .lightbox-prev { left: -60px; }
+    .lightbox-next { right: -60px; }
+
+    @media (max-width: 992px) {
+      .hero-grid { grid-template-columns: 1fr; text-align: center; }
+      .hero-cta-group, .hero-badges-row { justify-content: center; }
+      .about-preview-grid, .about-bio-grid, .footer-grid { grid-template-columns: 1fr; }
+      .activities-grid, .news-grid { grid-template-columns: repeat(2, 1fr); }
+      .leader-sticky-card { position: static; }
+    }
+
+    @media (max-width: 768px) {
+      .hero-title { font-size: 1.85rem; }
+      .section-heading-telugu { font-size: 1.7rem; }
+      .tribute-grid, .activities-grid, .news-grid, .contact-layout-grid { grid-template-columns: 1fr; }
+      .lightbox-prev { left: 10px; }
+      .lightbox-next { right: 10px; }
+    }
+  
+    /* Single blue header bar */
+    header.main-header { background-color: var(--deep-navy); box-shadow: 0 2px 8px rgba(0,0,0,0.25); }
+    .party-symbol-emblem { width: 52px; height: 52px; overflow: hidden; border: 2px solid #FFFFFF; }
+    .leader-title-telugu { color: #FFFFFF; }
+    .leader-subtitle { color: #93C5FD; }
+    .leader-subtitle .dot { color: #86EFAC; }
+    .nav-link { color: #E2E8F0; }
+    .nav-link:hover, .nav-link.active { color: #FFFFFF; background-color: rgba(255,255,255,0.14); }
+    .header-cta-btn { background: var(--party-green); box-shadow: none; }
+    .mobile-menu-toggle { color: #FFFFFF; }
+    .mobile-drawer { background: var(--deep-navy); border-top: 1px solid rgba(255,255,255,0.15); }
+    .mobile-nav-list .nav-link { border-bottom: 1px solid rgba(255,255,255,0.12); }
+    .brand-identity { flex-shrink: 0; }
+    .leader-title-telugu, .leader-subtitle { white-space: nowrap; }
+    .nav-link { white-space: nowrap; padding: 8px 6px; font-size: 0.78rem; }
+    .nav-links-desktop { gap: 2px; }
+    .header-cta-btn { margin-left: 4px; padding: 8px 12px; font-size: 0.8rem; white-space: nowrap; }
+    .navbar { gap: 14px; }
+    /* Tabs stay visible in the blue bar on tablet/mobile (scrollable row, no hamburger) */
+    @media (max-width: 1320px) {
+      .mobile-menu-toggle, .mobile-drawer { display: none !important; }
+      .navbar { flex-wrap: wrap; min-height: 0; padding: 10px 0 0; row-gap: 6px; }
+      header.main-header nav { width: 100%; min-width: 0; border-top: 1px solid rgba(255,255,255,0.15); }
+      .nav-links-desktop {
+        display: flex; flex-wrap: nowrap; gap: 4px;
+        overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none;
+        margin: 0 -20px; padding: 6px 20px 8px;
+      }
+      .nav-links-desktop::-webkit-scrollbar { display: none; }
+      .nav-links-desktop li { flex: 0 0 auto; }
+      .nav-link { font-size: 0.86rem; padding: 7px 12px; }
+      .header-cta-btn { margin-left: 0; padding: 7px 14px; font-size: 0.84rem; }
+    }
+
+    /* Smaller gaps between sections on mobile */
+    @media (max-width: 768px) {
+      .section-py { padding: 34px 0; }
+      .section-header { margin-bottom: 22px; }
+      .section-heading-telugu { margin-bottom: 8px; }
+      .hero-section { padding: 12px 0 26px; }
+      .hero-section[style] { padding: 22px 0 !important; }
+      .hero-grid { gap: 18px; }
+      .hero-title { margin-bottom: 10px; }
+      .hero-lead-text { margin-bottom: 18px; }
+      div[style*="margin-top: 40px"] { margin-top: 22px !important; }
+      .container { padding: 0 16px; }
+      .nav-links-desktop { margin: 0 -16px; padding: 6px 16px 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Slim decorative party flag band -->
+  <div class="party-tricolor-ribbon" aria-hidden="true"></div>
+
+
+  <header class="main-header" id="mainHeader">
+    <div class="container navbar">
+      <a href="#home" class="brand-identity" onclick="navigateToPage('home')">
+        <div class="party-symbol-emblem" title="వరికూటి అశోక్ బాబు గారు">
+          <img src="Varikuti Ashok Babu.jfif" alt="వరికూటి అశోక్ బాబు గారు" style="width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:50%;">
+        </div>
+        <div style="display: flex; flex-direction: column;">
+          <span class="leader-title-telugu">వరికూటి అశోక్ బాబు గారు</span>
+          <span class="leader-subtitle">వైయస్ఆర్ కాంగ్రెస్ పార్టీ <span class="dot">•</span> వేమూరు</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links-desktop">
+          <li><a href="#home" class="nav-link active" data-page="home">హోమ్</a></li>
+          <li><a href="#about" class="nav-link" data-page="about">పరిచయం (About)</a></li>
+          <li><a href="#activities" class="nav-link" data-page="activities">కార్యక్రమాలు (Activities)</a></li>
+          <li><a href="#gallery" class="nav-link" data-page="gallery">చిత్రమాలిక (Gallery)</a></li>
+          <li><a href="#news" class="nav-link" data-page="news">వార్తలు (News)</a></li>
+          <li><a href="#contact" class="nav-link" data-page="contact">సంప్రదించండి (Contact)</a></li>
+          <li>
+            <a href="#contact" class="btn header-cta-btn" onclick="navigateToPage('contact')">
+              <span>స్పందన నమోదు</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="మెనూ తెరవండి">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="nav-link" data-page="home">హోమ్</a></li>
+        <li><a href="#about" class="nav-link" data-page="about">పరిచయం (About)</a></li>
+        <li><a href="#activities" class="nav-link" data-page="activities">కార్యక్రమాలు (Activities)</a></li>
+        <li><a href="#gallery" class="nav-link" data-page="gallery">చిత్రమాలిక (Gallery)</a></li>
+        <li><a href="#news" class="nav-link" data-page="news">వార్తలు (News)</a></li>
+        <li><a href="#contact" class="nav-link" data-page="contact">సంప్రదించండి (Contact)</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="app-root">
+
+    <div id="view-home" class="page-view active-view">
+      
+      <!-- Hero Section with Sri Varikuti Ashok Babu Garu's Authentic Photo -->
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="party-affiliation-tag">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <span>ప్రజాసేవ • నిరంతర శ్రమ • విశ్వసనీయ నాయకత్వం</span>
+            </div>
+            <h1 class="hero-title">
+              ప్రజలతో కలిసి… <br>
+              <span class="highlight">ప్రజల కోసం నిరంతరం!</span>
+            </h1>
+            <p class="hero-lead-text">
+              శ్రీ వరికూటి అశోక్ బాబు గారి ప్రజా కార్యక్రమాలు, వేమూరు నియోజకవర్గ సమస్యలపై స్పందనలు, సమావేశాలు మరియు అభివృద్ధి సంక్షేమ కార్యక్రమాల సమగ్ర సమాచారం.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#about" class="btn btn-primary" onclick="navigateToPage('about')">
+                <span>మా గురించి తెలుసుకోండి</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="#activities" class="btn btn-outline" onclick="navigateToPage('activities')">
+                <span>కార్యక్రమాలు చూడండి</span>
+              </a>
+            </div>
+            <div class="hero-badges-row">
+              <div class="hero-stat-item">
+                <span class="stat-number">వేమూరు</span>
+                <span class="stat-label">నియోజకవర్గం</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="stat-number">బాపట్ల జిల్లా</span>
+                <span class="stat-label">ఆంధ్రప్రదేశ్</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">ప్రజా అందుబాటు</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Leader Card: Sri Varikuti Ashok Babu Garu -->
+          <!-- <div class="hero-image-wrap">
+            <div class="hero-card-frame">
+              <div class="portrait-image-container">
+                <img 
+                  src="Varikuti Ashok Babu.jfif" 
+                  alt="శ్రీ వరికూటి అశోక్ బాబు గారు - వేమూరు" 
+                  class="portrait-img" 
+                  loading="eager">
+              </div>
+              <div class="portrait-caption-box">
+                <h2 class="leader-caption-name">శ్రీ వరికూటి అశోక్ బాబు గారు</h2>
+                <p class="leader-caption-role">వైయస్ఆర్ కాంగ్రెస్ పార్టీ నాయకులు • వేమూరు</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <section class="section-py" style="background-color: #FFFFFF;">
+        <div class="container">
+          <div class="about-preview-grid">
+            <div class="about-preview-img-box">
+              <img 
+                src="Varikuti Ashok Babu.jfif" 
+                alt="శ్రీ వరికూటి అశోక్ బాబు గారు" 
+                loading="lazy">
+            </div>
+            <div class="about-preview-text">
+              <span class="section-eyebrow">నాయకుడి సంక్షిప్త పరిచయం</span>
+              <h3>వరికూటి అశోక్ బాబు గారి గురించి</h3>
+              <p>
+                శ్రీ వరికూటి అశోక్ బాబు గారు వేమూరు నియోజకవర్గ పరిధిలో నిరంతరం ప్రజల పక్షాన నిలిచే అంకితభావం కలిగిన నాయకులు. డా. వై.ఎస్. రాజశేఖర రెడ్డి గారి సంక్షేమ సిద్ధాంతాలను, శ్రీ వై.ఎస్. జగన్ మోహన్ రెడ్డి గారి ప్రజా సంక్షేమ ఆశయాలను క్షేత్రస్థాయిలోకి తీసుకెళ్లడంలో ముందుంటున్నారు.
+              </p>
+              <p>
+                స్థానిక సమస్యలపై స్పందిస్తూ, పేద, బడుగు బలహీన వర్గాల అభ్యున్నతి కోసం పనిచేస్తూ ప్రజల మనస్సుల్లో ప్రత్యేక స్థానాన్ని సంపాదించుకున్నారు. ప్రతి గ్రామంలోని ప్రతి కుటుంబానికి అందుబాటులో ఉండే ప్రజా నాయకత్వం వీరిది.
+              </p>
+              <div class="pillar-points">
+                <div class="pillar-item">
+                  <div class="pillar-icon-dot">✓</div>
+                  <span>ప్రజా సమస్యల పరిష్కారం</span>
+                </div>
+                <div class="pillar-item">
+                  <div class="pillar-icon-dot">✓</div>
+                  <span>గ్రామీణ ప్రాంతాల అభివృద్ధి</span>
+                </div>
+                <div class="pillar-item">
+                  <div class="pillar-icon-dot">✓</div>
+                  <span>రైతు సంక్షేమ సాధన</span>
+                </div>
+                <div class="pillar-item">
+                  <div class="pillar-icon-dot">✓</div>
+                  <span>నిరంతర కార్యకర్తల తోడ్పాటు</span>
+                </div>
+              </div>
+              <a href="#about" class="btn btn-primary" onclick="navigateToPage('about')">
+                <span>పూర్తి వివరాలు చదవండి</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-py tribute-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">స్ఫూర్తిప్రదాతలు</span>
+            <h2 class="section-heading-telugu">మహానేతల స్మరణ & ఆదర్శ నాయకత్వం</h2>
+            <p class="section-subtitle-desc">
+              పేదల సంక్షేమానికి సరికొత్త బాటలు వేసిన దివంగత ముఖ్యమంత్రి డా. వై.ఎస్. రాజశేఖర రెడ్డి గారు మరియు వైయస్ఆర్‌సీపీ అధినేత శ్రీ వై.ఎస్. జగన్ మోహన్ రెడ్డి గారి స్ఫూర్తితో ప్రజాసేవ.
+            </p>
+          </div>
+
+          <div class="tribute-grid">
+            <!-- Card 1: Late Dr. Y.S. Rajasekhara Reddy Garu -->
+            <div class="tribute-card">
+              <div class="tribute-avatar-wrap">
+                <img 
+                  src="Ys Rajasekhar Reddy Garu.jfif" 
+                  alt="దివంగత డా. వై.ఎస్. రాజశేఖర రెడ్డి గారు" 
+                  loading="lazy">
+              </div>
+              <h3 class="tribute-leader-name">దివంగత డా. వై.ఎస్. రాజశేఖర రెడ్డి గారు</h3>
+              <span class="tribute-leader-tag">మాజీ ముఖ్యమంత్రి • సంక్షేమ పితామహుడు</span>
+              <p class="tribute-leader-desc">
+                ఉచిత విద్యుత్, ఆరోగ్యశ్రీ, ఫీజు రీయింబర్స్‌మెంట్ మరియు జలయజ్ఞం పథకాలతో రాష్ట్ర ప్రజల గుండెల్లో శాశ్వత స్థానాన్ని సంపాదించుకున్న ప్రజాపాలకుడు. వీరి ప్రవేశపెట్టిన సంక్షేమ పథకాలు దేశానికే ఆదర్శం.
+              </p>
+            </div>
+
+            <!-- Card 2: Sri Y.S. Jagan Mohan Reddy Garu -->
+            <div class="tribute-card">
+              <div class="tribute-avatar-wrap">
+                <img 
+                  src="Ys Jagan Mohan Reddy Garu.jfif" 
+                  alt="శ్రీ వై.ఎస్. జగన్ మోహన్ రెడ్డి గారు" 
+                  loading="lazy">
+              </div>
+              <h3 class="tribute-leader-name">శ్రీ వై.ఎస్. జగన్ మోహన్ రెడ్డి గారు</h3>
+              <span class="tribute-leader-tag">వైయస్ఆర్ కాంగ్రెస్ పార్టీ అధ్యక్షులు</span>
+              <p class="tribute-leader-desc">
+                నవరత్నాలు పథకాలతో అర్హులందరికీ పారదర్శకంగా సంక్షేమం అందించి, విద్య, వైద్య రంగాలలో విప్లవాత్మక సంస్కరణలు తెచ్చి సామాజిక న్యాయానికి పెద్దపీట వేసిన ప్రజానేత.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-py" style="background-color: #F8FAFC;">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">క్షేత్రస్థాయి కార్యాచరణ</span>
+            <h2 class="section-heading-telugu">ప్రజా కార్యక్రమాలు & నియోజకవర్గ సేవా విశేషాలు</h2>
+            <p class="section-subtitle-desc">
+              వేమూరు మండలాల్లోని గ్రామాలు, రైతు సదస్సులు, సేవా కార్యక్రమాలు మరియు కార్యకర్తల సమావేశాల వివరాలు.
+            </p>
+          </div>
+          <div class="activities-grid" id="homeActivitiesContainer"></div>
+          <div style="text-align: center; margin-top: 40px;">
+            <a href="#activities" class="btn btn-outline" onclick="navigateToPage('activities')">
+              <span>అన్ని కార్యక్రమాలు చూడండి (View All)</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-py" style="background-color: #FFFFFF;">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">తాజా వార్తా విశేషాలు</span>
+            <h2 class="section-heading-telugu">వార్తలు & పత్రికా ప్రకటనలు</h2>
+            <p class="section-subtitle-desc">
+              వేమూరు నియోజకవర్గ అభివృద్ధికై వరికూటి అశోక్ బాబు గారి ప్రకటనలు మరియు అధికారిక సమాచార నివేదికలు.
+            </p>
+          </div>
+          <div class="news-grid" id="homeNewsContainer"></div>
+        </div>
+      </section>
+
+      <section class="section-py" style="background-color: #F8FAFC;">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">ఛాయాచిత్రాలు</span>
+            <h2 class="section-heading-telugu">చిత్రమాలిక (Photo Gallery)</h2>
+            <p class="section-subtitle-desc">
+              ప్రజలతో మమేకమైన క్షణాలు, ఆత్మీయ కలయికలు మరియు నాయకుల ఛాయాచిత్రాలు.
+            </p>
+          </div>
+
+          <div class="gallery-filter-bar">
+            <button class="filter-btn active" onclick="filterGallery('all')">అన్నీ (All)</button>
+            <button class="filter-btn" onclick="filterGallery('ashok')">వరికూటి అశోక్ బాబు గారు</button>
+            <button class="filter-btn" onclick="filterGallery('ysr')">డాక్టర్ వైఎస్సార్ గారు</button>
+            <button class="filter-btn" onclick="filterGallery('jagan')">వైఎస్ జగన్ మోహన్ రెడ్డి గారు</button>
+          </div>
+
+          <div class="gallery-grid" id="homeGalleryContainer"></div>
+        </div>
+      </section>
+
+      <section class="section-py" style="background-color: #FFFFFF;" id="quickContactSection">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">ప్రజా సమస్యల నమోదు</span>
+            <h2 class="section-heading-telugu">సంప్రదించండి & అభిప్రాయాన్ని పంచుకోండి</h2>
+          </div>
+          <div class="contact-layout-grid">
+            <div class="contact-info-panel">
+              <h3>వేమూరు ప్రజా కార్యాలయం</h3>
+              <p>శ్రీ వరికూటి అశోక్ బాబు గారి నాయకత్వంలో నియోజకవర్గ ప్రజలకు సేవ చేయడానికి కార్యాలయ బృందం నిరంతరం సిద్ధంగా ఉంటుంది.</p>
+              <div style="font-size:0.9rem; line-height:2;">
+                <div>📍 వేమూరు పట్టణం, బాపట్ల జిల్లా, ఆంధ్రప్రదేశ్</div>
+                <div>📧 varikutiashokbabu@vemuru.com</div>
+                <div>⏰ సోమ - శని: ఉదయం 9:00 - సాయంత్రం 6:00</div>
+              </div>
+            </div>
+            <div class="contact-form-panel">
+              <div id="homeFormAlert" class="form-alert-box"></div>
+              <form id="homeContactForm" onsubmit="handleFormSubmission(event, 'homeFormAlert')">
+                <div class="form-group">
+                  <label class="form-label">మీ పేరు (Name) *</label>
+                  <input type="text" class="form-control" placeholder="ఉదా: తనీష్" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">ఫోన్ నంబర్ / ఈమెయిల్ *</label>
+                  <input type="text" class="form-control" placeholder="+91 9052058083" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">సమస్య వివరణ *</label>
+                  <textarea class="form-control" rows="3" placeholder="వివరంగా రాయండి..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">సందేశం పంపండి</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <div id="view-about" class="page-view">
+      <section class="hero-section" style="padding: 40px 0;">
+        <div class="container">
+          <span class="party-affiliation-tag">నాయకుడి ప్రొఫైల్ & ప్రజా జీవితం</span>
+          <h1 class="hero-title">శ్రీ వరికూటి అశోక్ బాబు గారి సమగ్ర పరిచయం</h1>
+        </div>
+      </section>
+
+      <section class="section-py" style="background: #F8FAFC;">
+        <div class="container">
+          <div class="about-bio-grid">
+            <div class="leader-sticky-card">
+              <div class="portrait-image-container" style="height: 380px; margin-bottom: 16px;">
+                <img 
+                  src="Varikuti Ashok Babu.jfif" 
+                  alt="శ్రీ వరికూటి అశోక్ బాబు గారు" 
+                  class="portrait-img">
+              </div>
+              <h3 style="font-size: 1.15rem; color: var(--deep-navy); margin-bottom: 4px;">వ్యక్తిగత & ప్రజా ప్రొఫైల్</h3>
+              <div style="font-size:0.85rem; line-height:1.8; color:#334155;">
+                <p><strong>పేరు:</strong> వరికూటి అశోక్ బాబు గారు</p>
+                <p><strong>పార్టీ:</strong> వైయస్ఆర్ కాంగ్రెస్ పార్టీ (YSRCP)</p>
+                <p><strong>నియోజకవర్గం:</strong> వేమూరు, బాపట్ల జిల్లా</p>
+                <p><strong>ధ్యేయం:</strong> గ్రామీణాభివృద్ధి & పేదల సంక్షేమం</p>
+              </div>
+            </div>
+
+            <div class="bio-content-card">
+              <h2 style="font-size: 1.8rem; color: var(--deep-navy); margin-bottom: 18px;">ప్రజాసేవలో అంకితభావం</h2>
+              <p class="bio-paragraph">
+                శ్రీ వరికూటి అశోక్ బాబు గారు వేమూరు నియోజకవర్గ ప్రజలతో మమేకమై పనిచేస్తూ, క్షేత్రస్థాయి సమస్యలను నేరుగా తెలుసుకుని పరిష్కరించడంలో ఎల్లప్పుడూ ముందుంటారు. గ్రామ స్థాయి నుండి పార్టీ శ్రేణులను సంఘటితం చేస్తూ ప్రజాభిమానాన్ని చూరగొన్నారు.
+              </p>
+              <p class="bio-paragraph">
+                దివంగత మహానేత డాక్టర్ వై.ఎస్. రాజశేఖర రెడ్డి గారి నిరుపేద పక్షపాతి సిద్ధాంతాలు, శ్రీ వై.ఎస్. జగన్ మోహన్ రెడ్డి గారి సంక్షేమ పాలన స్ఫూర్తితో నియోజకవర్గంలో వ్యవసాయం, తాగునీరు, విద్యాభివృద్ధి, మరియు గ్రామీణ మౌలిక వసతుల సాధన కోసం నిరంతరం శ్రమిస్తున్నారు.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="view-activities" class="page-view">
+      <section class="hero-section" style="padding: 40px 0;">
+        <div class="container">
+          <span class="party-affiliation-tag">ప్రజా సంబంధాలు & సమీక్షలు</span>
+          <h1 class="hero-title">కార్యక్రమాలు & ప్రజా పర్యటనలు</h1>
+        </div>
+      </section>
+      <section class="section-py" style="background: #FFFFFF;">
+        <div class="container">
+          <div class="activities-grid" id="allActivitiesContainer"></div>
+        </div>
+      </section>
+    </div>
+
+    <div id="view-gallery" class="page-view">
+      <section class="hero-section" style="padding: 40px 0;">
+        <div class="container">
+          <span class="party-affiliation-tag">ఫోటో ఆల్బమ్</span>
+          <h1 class="hero-title">చిత్రమాలిక (Photo Gallery)</h1>
+        </div>
+      </section>
+      <section class="section-py" style="background: #F8FAFC;">
+        <div class="container">
+          <div class="gallery-grid" id="fullGalleryContainer"></div>
+        </div>
+      </section>
+    </div>
+
+    <div id="view-news" class="page-view">
+      <section class="hero-section" style="padding: 40px 0;">
+        <div class="container">
+          <span class="party-affiliation-tag">మీడియా & పత్రికా వార్తలు</span>
+          <h1 class="hero-title">వార్తలు & అప్‌డేట్స్ (News & Updates)</h1>
+        </div>
+      </section>
+      <section class="section-py" style="background: #FFFFFF;">
+        <div class="container">
+          <div class="news-grid" id="fullNewsContainer"></div>
+        </div>
+      </section>
+    </div>
+
+    <div id="view-contact" class="page-view">
+      <section class="hero-section" style="padding: 40px 0;">
+        <div class="container">
+          <span class="party-affiliation-tag">ప్రజా గ్రీవెన్స్</span>
+          <h1 class="hero-title">సంప్రదించండి (Contact Public Office)</h1>
+        </div>
+      </section>
+      <section class="section-py" style="background: #F8FAFC;">
+        <div class="container">
+          <div class="contact-layout-grid">
+            <div class="contact-info-panel">
+              <h3>వేమూరు ప్రజా సేవా కేంద్రం</h3>
+              <p>ప్రజల మధ్యనే ఉంటూ సమస్యల సత్వర పరిష్కారమే లక్ష్యం.</p>
+              <div style="font-size:0.9rem; line-height:2;">
+                <div>📍 వేమూరు, బాపట్ల జిల్లా, ఆంధ్రప్రదేశ్</div>
+                <div>📧 varikutiashokbabu@vemuru.com</div>
+              </div>
+            </div>
+            <div class="contact-form-panel">
+              <div id="dedicatedFormAlert" class="form-alert-box"></div>
+              <form onsubmit="handleFormSubmission(event, 'dedicatedFormAlert')">
+                <div class="form-group">
+                  <label class="form-label">మీ పేరు *</label>
+                  <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">ఫోన్ నంబర్ *</label>
+                  <input type="text" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">వివరణ *</label>
+                  <textarea class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">విజ్ఞాపన పంపండి</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4 style="font-size:1.3rem; color:#FFF; margin-bottom:8px;">వరికూటి అశోక్ బాబు గారు</h4>
+          <p style="color:#93C5FD; font-size:0.88rem; margin-bottom:12px;">వైయస్ఆర్ కాంగ్రెస్ పార్టీ • వేమూరు నియోజకవర్గం</p>
+          <p style="color:#CBD5E1; font-size:0.88rem;">ప్రజలతో ప్రయాణం, సమస్యలపై పోరాటం, వేమూరు నియోజకవర్గ సమగ్రాభివృద్ధే ధ్యేయం.</p>
+        </div>
+        <div>
+          <h5 style="color:#FFF; margin-bottom:14px;">త్వరిత లింకులు</h5>
+          <ul style="list-style:none; line-height:2; font-size:0.88rem; color:#CBD5E1;">
+            <li><a href="#home" onclick="navigateToPage('home')">→ హోమ్</a></li>
+            <li><a href="#about" onclick="navigateToPage('about')">→ పరిచయం (About)</a></li>
+            <li><a href="#activities" onclick="navigateToPage('activities')">→ కార్యక్రమాలు (Activities)</a></li>
+            <li><a href="#gallery" onclick="navigateToPage('gallery')">→ చిత్రమాలిక (Gallery)</a></li>
+            <li><a href="#contact" onclick="navigateToPage('contact')">→ సంప్రదించండి (Contact)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 style="color:#FFF; margin-bottom:14px;">కార్యాలయం చిరునామా</h5>
+          <p style="font-size:0.88rem; color:#CBD5E1; line-height:1.8;">
+            వేమూరు నియోజకవర్గం, బాపట్ల జిల్లా, ఆంధ్రప్రదేశ్ - 522261<br>
+            ప్రజా దర్శనం: ఉదయం 9:00 - 11:30
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom-bar">
+        <div class="footer-bottom-inner">
+          <div>© <span id="currentYearSpan">2026</span> శ్రీ వరికూటి అశోక్ బాబు గారు. సర్వహక్కులు ప్రత్యేకించబడ్డాయి.</div>
+          <div>వేమూరు శాసనసభ నియోజకవర్గం | ఆంధ్రప్రదేశ్</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="galleryLightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="ఫోటో లైట్‌బాక్స్">
+    <div class="lightbox-container">
+      <button class="lightbox-close-btn" onclick="closeLightbox()" aria-label="మూసివేయండి">&times;</button>
+      <button class="lightbox-nav-btn lightbox-prev" onclick="prevLightboxImage()" aria-label="మునుపటి చిత్రం">&#10094;</button>
+      <div class="lightbox-image-wrap">
+        <img id="lightboxImg" src="" alt="పెద్ద చిత్రం">
+      </div>
+      <button class="lightbox-nav-btn lightbox-next" onclick="nextLightboxImage()" aria-label="తదుపరి చిత్రం">&#10095;</button>
+      <div class="lightbox-caption-box" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <script>
+    const activitiesData = [
+      {
+        id: 1,
+        title: "వేమూరు మండలంలో ప్రజా సమస్యల పరిష్కార వేదిక",
+        categoryLabel: "ప్రజా సమావేశాలు",
+        date: "మార్చి 28",
+        desc: "గ్రామీణ ప్రాంతాల ప్రజలతో ముఖాముఖి చర్చించి, సాగునీరు మరియు విద్యుత్ సమస్యలపై అధికారులతో సమీక్షించారు.",
+        image: "vemuru-praja-vedika.jpg"
+      },
+      {
+        id: 2,
+        title: "రైతు భరోసా & వ్యవసాయ సాగునీటి కాల్వల పరిశీలన",
+        categoryLabel: "గ్రామ సందర్శనలు",
+        date: "మార్చి 15",
+        desc: "చివరి ఆయకట్టు రైతులకు నీరందేలా డెల్టా కాలువలను స్వయంగా పరిశీలించి నీటిపారుదల ఇంజనీర్లతో మాట్లాడారు.",
+        image: "ashok-walk.jpg"
+      },
+      {
+        id: 3,
+        title: "వైయస్ఆర్‌సీపీ కార్యకర్తల సమన్వయ ఆత్మీయ సదస్సు",
+        categoryLabel: "కార్యకర్తల సమావేశాలు",
+        date: "ఫిబ్రవరి 24",
+        desc: "నియోజకవర్గ స్థాయిలో పార్టీ నాయకులు, క్రియాశీల కార్యకర్తలతో సమావేశమై భవిష్యత్ కార్యాచరణను రూపొందించారు.",
+        image: "Varikuti Ashok Babu.jpg"
+      }
+    ];
+
+    const newsData = [
+      {
+        id: 1,
+        headline: "వేమూరు సమగ్ర అభివృద్ధికి నిరంతరం కృషి: వరికూటి అశోక్ బాబు",
+        date: "ఏప్రిల్ 02",
+        source: "పత్రికా ప్రకటన",
+        summary: "నియోజకవర్గంలో రోడ్లు, తాగునీరు మరియు కమ్యూనిటీ హాళ్ల నిర్మాణానికి త్వరలో ప్రత్యేక నిధులు మంజూరు కానున్నాయని వెల్లడించారు.",
+        image: "ashok-portrait.jpg"
+      },
+      {
+        id: 2,
+        headline: "రైతుల సంక్షేమమే వైయస్ఆర్‌సీపీ ప్రధాన ప్రాధాన్యత: శ్రీ వై.ఎస్. జగన్",
+        date: "మార్చి 22",
+        source: "మీడియా సమావేశం",
+        summary: "పంట నష్టపరిహారం మరియు గిట్టుబాటు ధరపై రైతులకు సంపూర్ణ అండగా ఉంటామని పార్టీ నాయకత్వం స్పష్టం చేసింది.",
+        image: "Ys Jagan Mohan Reddy Garu.jfif"
+      }
+      // {
+      //   id: 3,
+      //   headline: "పేద బిడ్డల ఉన్నత చదువులకు డాక్టర్ వైఎస్సార్ బాటలే మార్గదర్శకం",
+      //   date: "మార్చి 12",
+      //   source: "విద్యా సదస్సు",
+      //   summary: "పేదరికం చదువుకు అడ్డంకి కాకూడదన్నదే డాక్టర్ వైఎస్ రాజశేఖర రెడ్డి గారి ఆశయమని కొనియాడిన వరికూటి అశోక్ బాబు గారు.",
+      //   image: "Ys Rajasekhar Reddy Garu.jfif"
+      // }
+    ];
+
+    const galleryItems = [
+      {
+        id: 1,
+        leaderKey: 'ashok',
+        title: 'శ్రీ వరికూటి అశోక్ బాబు గారు',
+        sub: 'వేమూరు నియోజకవర్గ వైయస్ఆర్‌సీపీ నాయకులు',
+        image: 'Varikuti Ashok Babu.jfif'
+      },
+      {
+        id: 2,
+        leaderKey: 'ysr',
+        title: 'దివంగత డా. వై.ఎస్. రాజశేఖర రెడ్డి గారు',
+        sub: 'మాజీ ముఖ్యమంత్రి, సంక్షేమ ప్రదాత',
+        image: 'Ys Rajasekhar Reddy Garu.jfif'
+      },
+      {
+        id: 3,
+        leaderKey: 'jagan',
+        title: 'శ్రీ వై.ఎస్. జగన్ మోహన్ రెడ్డి గారు',
+        sub: 'వైయస్ఆర్ కాంగ్రెస్ పార్టీ అధ్యక్షులు',
+        image: 'Ys Jagan Mohan Reddy Garu.jfif'
+      },
+      {
+        id: 4,
+        leaderKey: 'ashok',
+        title: 'ప్రజా దర్బార్ - సమస్యల స్వీకరణ',
+        sub: 'వేమూరు నియోజకవర్గం',
+        image: 'Varikuti Ashok Babu (2).jfif'
+      },
+      {
+        id: 5,
+        leaderKey: 'ashok',
+        title: 'రైతులతో ముఖాముఖి సంభాషణ',
+        sub: 'వ్యవసాయ సాగునీటి సమీక్ష',
+        image: 'Varikuti Ashok Babu.jpg'
+      },
+      // {
+      //   id: 6,
+      //   leaderKey: 'ashok',
+      //   title: 'గ్రామ పర్యటనలో ఆత్మీయ కలయిక',
+      //   sub: 'క్షేత్రస్థాయి ప్రజా పర్యటన',
+      //   image: 'Varikuti Ashok Babu.jfif'
+      // }
+    ];
+
+    let currentLightboxIndex = 0;
+    let filteredGalleryItems = [...galleryItems];
+
+    function createActivityCardHTML(item) {
+      return `
+        <div class="activity-card">
+          <div class="activity-img-wrap">
+            <img src="${item.image}" alt="${item.title}" loading="lazy">
+            <span class="activity-category-tag">${item.categoryLabel}</span>
+          </div>
+          <div class="activity-body">
+            <h3 class="activity-title">${item.title}</h3>
+            <p class="activity-desc">${item.desc}</p>
+          </div>
+        </div>
+      `;
+    }
+
+    function createNewsCardHTML(news) {
+      return `
+        <div class="news-card">
+          <div class="news-thumb-wrap">
+            <img src="${news.image}" alt="${news.headline}" loading="lazy">
+          </div>
+          <div class="news-content">
+            <div class="news-date">
+              <span>${news.source}</span>
+            </div>
+            <h3 class="news-headline">${news.headline}</h3>
+            <p class="news-summary">${news.summary}</p>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderActivities() {
+      const homeC = document.getElementById('homeActivitiesContainer');
+      const allC = document.getElementById('allActivitiesContainer');
+      if (homeC) homeC.innerHTML = activitiesData.map(createActivityCardHTML).join('');
+      if (allC) allC.innerHTML = activitiesData.map(createActivityCardHTML).join('');
+    }
+
+    function renderNews() {
+      const homeC = document.getElementById('homeNewsContainer');
+      const allC = document.getElementById('fullNewsContainer');
+      if (homeC) homeC.innerHTML = newsData.map(createNewsCardHTML).join('');
+      if (allC) allC.innerHTML = newsData.map(createNewsCardHTML).join('');
+    }
+
+    function renderGallery(items) {
+      const homeG = document.getElementById('homeGalleryContainer');
+      const fullG = document.getElementById('fullGalleryContainer');
+
+      const html = items.map((item, index) => `
+        <div class="gallery-item" onclick="openLightbox(${index})" tabindex="0">
+          <img src="${item.image}" alt="${item.title}" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-caption">${item.title}</span>
+            <span class="gallery-subcaption">${item.sub}</span>
+          </div>
+        </div>
+      `).join('');
+
+      if (homeG) homeG.innerHTML = html;
+      if (fullG) fullG.innerHTML = html;
+    }
+
+    function filterGallery(key) {
+      document.querySelectorAll('.gallery-filter-bar .filter-btn').forEach(btn => btn.classList.remove('active'));
+      if (window.event && window.event.target) window.event.target.classList.add('active');
+
+      if (key === 'all') {
+        filteredGalleryItems = [...galleryItems];
+      } else {
+        filteredGalleryItems = galleryItems.filter(item => item.leaderKey === key);
+      }
+      renderGallery(filteredGalleryItems);
+    }
+
+    function openLightbox(index) {
+      currentLightboxIndex = index;
+      const item = filteredGalleryItems[index];
+      if (!item) return;
+
+      const lb = document.getElementById('galleryLightbox');
+      const lbImg = document.getElementById('lightboxImg');
+      const lbCap = document.getElementById('lightboxCaption');
+
+      lbImg.src = item.image;
+      lbCap.innerHTML = `<strong>${item.title}</strong><br><span style="color:#93C5FD; font-size:0.85rem;">${item.sub}</span>`;
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const lb = document.getElementById('galleryLightbox');
+      lb.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function nextLightboxImage() {
+      currentLightboxIndex = (currentLightboxIndex + 1) % filteredGalleryItems.length;
+      openLightbox(currentLightboxIndex);
+    }
+
+    function prevLightboxImage() {
+      currentLightboxIndex = (currentLightboxIndex - 1 + filteredGalleryItems.length) % filteredGalleryItems.length;
+      openLightbox(currentLightboxIndex);
+    }
+
+    function navigateToPage(pageId) {
+      document.querySelectorAll('.page-view').forEach(v => v.classList.remove('active-view'));
+      const target = document.getElementById(`view-${pageId}`) || document.getElementById('view-home');
+      target.classList.add('active-view');
+
+      document.querySelectorAll('.nav-links-desktop .nav-link, .mobile-nav-list .nav-link').forEach(link => {
+        link.classList.toggle('active', link.getAttribute('data-page') === pageId);
+      });
+
+      const drawer = document.getElementById('mobileDrawer');
+      if (drawer) drawer.classList.remove('open');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function handleFormSubmission(e, alertId) {
+      e.preventDefault();
+      const alert = document.getElementById(alertId);
+      alert.className = 'form-alert-box success';
+      alert.innerHTML = '<strong>ధన్యవాదాలు! మీ విజ్ఞాపన విజయవంతంగా నమోదైంది.</strong><br>కార్యాలయ బృందం పరిశీలిస్తుంది.';
+      e.target.reset();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderActivities();
+      renderNews();
+      renderGallery(galleryItems);
+
+      const menuBtn = document.getElementById('mobileMenuBtn');
+      const drawer = document.getElementById('mobileDrawer');
+      if (menuBtn && drawer) {
+        menuBtn.addEventListener('click', () => drawer.classList.toggle('open'));
+      }
+
+      window.addEventListener('hashchange', () => {
+        const hash = window.location.hash.replace('#', '') || 'home';
+        navigateToPage(hash);
+      });
+    });
+  </script>
+</body>
+</html>
