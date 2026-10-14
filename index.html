@@ -1098,7 +1098,7 @@
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       gap: 14px; text-align: center; padding: 24px;
       background: radial-gradient(circle at 50% 38%, #0B5CA8 0%, #073B70 55%, #04264A 100%);
-      animation: splashOut 0.7s ease 2.5s forwards;
+      animation: splashOut 0.7s ease 3.7s forwards;
     }
     .intro-splash.skip { animation: splashOut 0.35s ease 0s forwards; }
     .intro-photo {
@@ -1121,9 +1121,12 @@
     .intro-bar i:nth-child(1) { background: #138A4B; }
     .intro-bar i:nth-child(2) { background: #FFFFFF; }
     .intro-bar i:nth-child(3) { background: #0876C9; }
-    .intro-name { color: #FFFFFF; font-size: 1.6rem; font-weight: 800; animation: introUp 0.7s ease 1s both; }
-    .intro-party { color: #93C5FD; font-size: 1rem; font-weight: 600; animation: introUp 0.7s ease 1.25s both; }
-    .intro-place { color: #CBD5E1; font-size: 0.85rem; animation: introUp 0.7s ease 1.5s both; }
+    .intro-slogan { display: flex; flex-direction: column; gap: 4px; max-width: 520px; animation: introUp 0.8s ease 1.0s both; }
+    .intro-slogan span:first-child { color: #FDE68A; font-size: 1.25rem; font-weight: 800; line-height: 1.45; }
+    .intro-slogan span:last-child { color: #FFFFFF; font-size: 1.05rem; font-weight: 600; line-height: 1.5; }
+    .intro-name { color: #FFFFFF; font-size: 1.35rem; font-weight: 800; margin-top: 4px; animation: introUp 0.7s ease 1.7s both; }
+    .intro-party { color: #93C5FD; font-size: 1rem; font-weight: 600; animation: introUp 0.7s ease 1.95s both; }
+    .intro-place { color: #CBD5E1; font-size: 0.85rem; animation: introUp 0.7s ease 2.2s both; }
     @keyframes photoIn { from { opacity: 0; transform: scale(0.4) rotate(-8deg); } to { opacity: 1; transform: scale(1) rotate(0); } }
     @keyframes ringPulse { from { opacity: 1; transform: scale(1); } to { opacity: 0; transform: scale(1.7); } }
     @keyframes barGrow { from { width: 0; } to { width: 220px; } }
@@ -1132,11 +1135,11 @@
 
     /* Hero entrance after the intro */
     .hero-content > * { animation: heroUp 0.8s ease both; }
-    .hero-content > *:nth-child(1) { animation-delay: 2.7s; }
-    .hero-content > *:nth-child(2) { animation-delay: 2.85s; }
-    .hero-content > *:nth-child(3) { animation-delay: 3.0s; }
-    .hero-content > *:nth-child(4) { animation-delay: 3.15s; }
-    .hero-content > *:nth-child(5) { animation-delay: 3.3s; }
+    .hero-content > *:nth-child(1) { animation-delay: 3.9s; }
+    .hero-content > *:nth-child(2) { animation-delay: 4.05s; }
+    .hero-content > *:nth-child(3) { animation-delay: 4.2s; }
+    .hero-content > *:nth-child(4) { animation-delay: 4.35s; }
+    .hero-content > *:nth-child(5) { animation-delay: 4.5s; }
     @keyframes heroUp { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: translateY(0); } }
 
     /* Scroll reveal */
@@ -1144,7 +1147,7 @@
     .reveal.in { opacity: 1; animation: revealUp 0.7s ease backwards; }
     @keyframes revealUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
 
-    @media (max-width: 480px) { .intro-name { font-size: 1.3rem; } .intro-photo { width: 130px; height: 130px; } }
+    @media (max-width: 480px) { .intro-name { font-size: 1.15rem; } .intro-photo { width: 120px; height: 120px; } .intro-slogan span:first-child { font-size: 1.1rem; } .intro-slogan span:last-child { font-size: 0.95rem; } }
     @media (prefers-reduced-motion: reduce) {
       .intro-splash { display: none; }
       .hero-content > *, .reveal.in { animation: none; }
@@ -1158,6 +1161,7 @@
   <div class="intro-splash" id="introSplash" aria-hidden="true">
     <div class="intro-photo"><img src="Varikuti Ashok Babu.jfif" alt=""></div>
     <div class="intro-bar"><i></i><i></i><i></i></div>
+    <div class="intro-slogan"><span>2029 ఎన్నికలలో ఫ్యాన్ గుర్తుకి ఓటు వేయండి</span><span>మన ప్రియతమ నాయకుడు శ్రీ వరికూటి అశోక్ బాబు గారిని గెలిపించండి</span></div>
     <div class="intro-name">వరికూటి అశోక్ బాబు గారు</div>
     <div class="intro-party">వైయస్ఆర్ కాంగ్రెస్ పార్టీ • వేమూరు</div>
     <div class="intro-place">వేమూరు నియోజకవర్గం | ఆంధ్రప్రదేశ్</div>
@@ -1676,7 +1680,7 @@
         date: "మార్చి 22",
         source: "మీడియా సమావేశం",
         summary: "పంట నష్టపరిహారం మరియు గిట్టుబాటు ధరపై రైతులకు సంపూర్ణ అండగా ఉంటామని పార్టీ నాయకత్వం స్పష్టం చేసింది.",
-        image: "Ys Jagan Mohan Reddy Garu.jfif"
+        image: "ys-jagan-press.jpg"
       }
       // {
       //   id: 3,
@@ -1701,14 +1705,14 @@
         leaderKey: 'ysr',
         title: 'దివంగత డా. వై.ఎస్. రాజశేఖర రెడ్డి గారు',
         sub: 'మాజీ ముఖ్యమంత్రి, సంక్షేమ ప్రదాత',
-        image: 'Ys Rajasekhar Reddy Garu.jfif'
+        image: 'ysr-turban.webp'
       },
       {
         id: 3,
         leaderKey: 'jagan',
         title: 'శ్రీ వై.ఎస్. జగన్ మోహన్ రెడ్డి గారు',
         sub: 'వైయస్ఆర్ కాంగ్రెస్ పార్టీ అధ్యక్షులు',
-        image: 'Ys Jagan Mohan Reddy Garu.jfif'
+        image: 'ys-jagan-mic.webp'
       },
       {
         id: 4,
