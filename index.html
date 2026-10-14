@@ -1091,9 +1091,78 @@
       footer.main-footer { padding-top: 32px; }
       .footer-grid { gap: 24px; margin-bottom: 28px; }
     }
+
+    /* ===== Opening animation ===== */
+    .intro-splash {
+      position: fixed; inset: 0; z-index: 5000;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 14px; text-align: center; padding: 24px;
+      background: radial-gradient(circle at 50% 38%, #0B5CA8 0%, #073B70 55%, #04264A 100%);
+      animation: splashOut 0.7s ease 2.5s forwards;
+    }
+    .intro-splash.skip { animation: splashOut 0.35s ease 0s forwards; }
+    .intro-photo {
+      position: relative; width: 150px; height: 150px; border-radius: 50%;
+      border: 4px solid #FFFFFF; overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.45);
+      animation: photoIn 0.9s cubic-bezier(0.2, 0.9, 0.3, 1.2) 0.1s both;
+    }
+    .intro-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+    .intro-photo::after {
+      content: ""; position: absolute; inset: -4px; border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.7);
+      animation: ringPulse 1.4s ease-out 0.9s 1 both;
+    }
+    .intro-bar {
+      display: flex; height: 5px; width: 0; border-radius: 3px; overflow: hidden;
+      animation: barGrow 0.9s ease 0.7s forwards;
+    }
+    .intro-bar i { flex: 1; display: block; }
+    .intro-bar i:nth-child(1) { background: #138A4B; }
+    .intro-bar i:nth-child(2) { background: #FFFFFF; }
+    .intro-bar i:nth-child(3) { background: #0876C9; }
+    .intro-name { color: #FFFFFF; font-size: 1.6rem; font-weight: 800; animation: introUp 0.7s ease 1s both; }
+    .intro-party { color: #93C5FD; font-size: 1rem; font-weight: 600; animation: introUp 0.7s ease 1.25s both; }
+    .intro-place { color: #CBD5E1; font-size: 0.85rem; animation: introUp 0.7s ease 1.5s both; }
+    @keyframes photoIn { from { opacity: 0; transform: scale(0.4) rotate(-8deg); } to { opacity: 1; transform: scale(1) rotate(0); } }
+    @keyframes ringPulse { from { opacity: 1; transform: scale(1); } to { opacity: 0; transform: scale(1.7); } }
+    @keyframes barGrow { from { width: 0; } to { width: 220px; } }
+    @keyframes introUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes splashOut { from { opacity: 1; visibility: visible; } to { opacity: 0; visibility: hidden; } }
+
+    /* Hero entrance after the intro */
+    .hero-content > * { animation: heroUp 0.8s ease both; }
+    .hero-content > *:nth-child(1) { animation-delay: 2.7s; }
+    .hero-content > *:nth-child(2) { animation-delay: 2.85s; }
+    .hero-content > *:nth-child(3) { animation-delay: 3.0s; }
+    .hero-content > *:nth-child(4) { animation-delay: 3.15s; }
+    .hero-content > *:nth-child(5) { animation-delay: 3.3s; }
+    @keyframes heroUp { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* Scroll reveal */
+    .reveal { opacity: 0; }
+    .reveal.in { opacity: 1; animation: revealUp 0.7s ease backwards; }
+    @keyframes revealUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+
+    @media (max-width: 480px) { .intro-name { font-size: 1.3rem; } .intro-photo { width: 130px; height: 130px; } }
+    @media (prefers-reduced-motion: reduce) {
+      .intro-splash { display: none; }
+      .hero-content > *, .reveal.in { animation: none; }
+      .reveal { opacity: 1; }
+    }
   </style>
 </head>
 <body>
+
+  <!-- Opening animation -->
+  <div class="intro-splash" id="introSplash" aria-hidden="true">
+    <div class="intro-photo"><img src="Varikuti Ashok Babu.jfif" alt=""></div>
+    <div class="intro-bar"><i></i><i></i><i></i></div>
+    <div class="intro-name">వరికూటి అశోక్ బాబు గారు</div>
+    <div class="intro-party">వైయస్ఆర్ కాంగ్రెస్ పార్టీ • వేమూరు</div>
+    <div class="intro-place">వేమూరు నియోజకవర్గం | ఆంధ్రప్రదేశ్</div>
+  </div>
+
 
   <!-- Slim decorative party flag band -->
   <div class="party-tricolor-ribbon" aria-hidden="true"></div>
@@ -1812,6 +1881,30 @@
         navigateToPage(hash);
       });
     });
+
+    // Opening animation: tap to skip, scroll reveal for sections
+    (function () {
+      var splash = document.getElementById('introSplash');
+      if (splash) splash.addEventListener('click', function () { splash.classList.add('skip'); });
+
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce || !('IntersectionObserver' in window)) return;
+      var sel = '.section-header,.about-preview-grid,.tribute-card,.activity-card,.news-card,.gallery-item,.contact-layout-grid,.bio-content-card,.leader-sticky-card';
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.1 });
+      function scan() {
+        document.querySelectorAll(sel).forEach(function (el) {
+          if (!el.dataset.rv) { el.dataset.rv = '1'; el.classList.add('reveal'); io.observe(el); }
+        });
+      }
+      var t;
+      new MutationObserver(function () { clearTimeout(t); t = setTimeout(scan, 30); })
+        .observe(document.getElementById('app-root'), { childList: true, subtree: true });
+      window.addEventListener('load', scan);
+    })();
   </script>
 </body>
 </html>
